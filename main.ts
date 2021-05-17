@@ -1,7 +1,15 @@
 namespace SpriteKind {
     export const npc = SpriteKind.create()
 }
-let mySprite = sprites.create(img`
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (mySprite.overlapsWith(mySprite2)) {
+        game.splash("hi traveler.")
+        game.splash("you need to find the relics.")
+    }
+})
+let mySprite2: Sprite = null
+let mySprite: Sprite = null
+mySprite = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f d d f f f . . . . 
     . . . f f f d d d d f f f . . . 
@@ -22,7 +30,7 @@ let mySprite = sprites.create(img`
 controller.moveSprite(mySprite)
 tiles.setTilemap(tilemap`level1`)
 scene.cameraFollowSprite(mySprite)
-let mySprite2 = sprites.create(img`
+mySprite2 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . 4 4 4 4 . . . . . . 
     . . . . 4 4 4 5 5 4 4 4 . . . . 
@@ -40,7 +48,7 @@ let mySprite2 = sprites.create(img`
     . . . . . . 4 4 4 4 . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.npc)
-mySprite2.setPosition(156, 125)
+mySprite2.setPosition(156, 121)
 let mySprite3 = sprites.create(img`
     ........................
     ........................
@@ -68,3 +76,4 @@ let mySprite3 = sprites.create(img`
     ........................
     `, SpriteKind.npc)
 mySprite3.setPosition(128, 121)
+game.splash("hello.....over...here.")
