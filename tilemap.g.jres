@@ -4,10 +4,28 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
+    "tile3": {
+        "data": "hwQQABAAAADMzMzMzMzMzOzu7u7u7u7O7Lu7u7u7u87sy8zMzMy8zuzL/////7zO7Mv/Iv//vM7sy/8v8v+8zuzL/////7zO7Mv/////vM7sy/8v8v+8zuzL/yL//7zO7Mv/////vM7sy8zMzMy8zuy7u7u7u7vO7O7u7u7u7s7MzMzMzMzMzA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile1"
+    },
+    "tile2": {
+        "data": "hwQQABAAAADd3d3d3d3d3d3d3d3d3d3d3d3d3d3dvbvd3d3d3d29u93d3d3dvSuy3d3d3d29K7Ld3d3dvSsist3d3d29KyKy3d3dvSsi0r3d3d29KyLSvd3dvSsi0t293d29KyLS3b3d3b27293d3d3dvbvb3d3d3d3d3d3d3d3d3d3d3d3d3Q==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile0"
+    },
+    "tile1": {
+        "data": "hwQQABAAAADdu7u7u7vd3d27VVXd3d3d3btVVd3d3d3d3btVVd3d3d3du1VV3d3d3d3du1VV3d3d3d27VVXd3d3d3d27Vbvd3d3d3btVu93d3d3d3bu73d3d3d3du7vd3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3Q==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile"
+    },
     "level1": {
         "id": "level1",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxMDAwMTAwMDAwMDAwMDAyMDEwMTAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMTAxMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAxMDEwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDEwMTAyMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDIwMTAxMDIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjAxMDEwMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDEwMTAzMDQwNDA0MDQwNDA0MDUwMDAwMDAwMDAwMDIwMTAxMDEwMTAxMDEwMTAxMDEwMjAwMDAwMDAwMDAwMjAxMDEwMTAxMDEwMTAxMDEwMTAyMDAwMDAwMDAwMDAyMDEwMTAxMDEwMTAxMDEwMTAxMDIwMDAwMDAwMDAwMDIwMTAxMDEwMTAxMDEwMTAxMDEwMjAwMDAwMDAwMDAwMjAxMDEwMTAxMDEwMTAxMDEwNjAyMDAwMDAwMDAwMDAzMDQwNDA0MDQwNDA0MDQwNDA0MDUwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyMDAwMDIwMDAwMDAwMDAwMjAwMDAyMDAwMDAwMDAwMDIwMDAwMjAwMDAwMDAwMDAyMDAwMDIwMDAwMDAwMDAwMjAwMDAyMDAwMDAwMDAwMDIwMDAwMjAwMDAwMDAwMDAyMDAwMjIyMjIyMjIwMDAwMjAwMDAwMDAwMDIwMDAwMDIwMDAwMDAwMDAyMDAwMDAyMDAwMDAwMDAwMjAwMDAwMjAwMDAwMDAwMDIwMDAwMDIwMDAwMDAwMDAyMDAwMDAyMDIyMjIyMjIyMjIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
+        "data": "MTAxMDAwMTAwMDA3MDcwNzAyMDYwNjAyMDcwNzA3MDcwMTA3MDcwNzAxMDcwMTA3MDIwNjA2MDIwMTA3MDcwODA3MDcwMTA3MDcwNzAxMDcwMjA2MDYwMjA3MDcwMTA3MDkwMTA3MDcwMTAxMDcwNzAyMDYwNjAyMDcwNzA3MDcwNzA3MDcwNzA3MDEwNzA3MDIwNjAxMDIwNzAxMDcwNzA3MDEwNzAxMDcwMTA3MDcwMjA2MDEwMjA3MDcwMTAxMDcwNzA3MDEwNzA3MDcwNzAyMDYwMTAzMDQwNDA0MDQwNDA0MDQwNDA1MDcwMTA3MDIwNjA2MDYwNjA2MDYwNjA2MDYwNjA2MDEwNzA3MDcwMjA2MDYwNjA2MDYwNjA2MDYwNjA2MDYwMTA3MDcwNzAyMDYwNjA2MDYwNjA2MDYwNjA2MDYwNjAxMDEwNzA3MDIwNjA2MDYwNjA2MDYwNjA2MDYwNjA2MDEwMTA3MDcwMjA2MDYwNjA2MDYwNjA2MDYwNjA2MDYwMTAxMDcwNzAzMDQwNDA0MDQwNDA0MDQwNDA0MDQwNDA1MDEwNzA3MDcwNzA3MDEwMTAxMDcwNzA3MDcwMTA3MDEwNzA3MDEwMTA3MDcwNzA3MDcwMTA3MDEwNzAxMDcwMTA3MDcwNzA3MDcwNzA3MDcwNzA3MDEwNzA3MDcwNzA3MDAyMDAwMDIwMDAwMDAwMDAwMjAwMDAyMDAwMDAwMDAwMDIwMDAwMjAwMDAwMDAwMDAyMDAwMDIwMDAwMDAwMDAwMjAwMDAyMDAwMDAwMDAwMDIwMDAwMjAwMDAwMDAwMDAyMDAwMjIyMjIyMjIyMjAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDAwMDAwMDAwMDAwMDAwMjAwMDAwMDAwMDAwMDAwMDIwMDAwMDAwMDAwMDAwMDAyMDIyMjIyMjIyMjIyMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
         "tileset": [
             "myTiles.transparency16",
             "sprites.castle.tileDarkGrass1",
@@ -15,9 +33,24 @@
             "sprites.builtin.forestTiles1",
             "sprites.builtin.forestTiles2",
             "sprites.builtin.forestTiles3",
-            "sprites.castle.tileDarkGrass3"
+            "sprites.castle.tileDarkGrass3",
+            "sprites.castle.tileDarkGrass2",
+            "myTiles.tile2",
+            "myTiles.tile1"
         ],
         "displayName": "level1"
+    },
+    "level2": {
+        "id": "level2",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDEwMTAxMDEwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMTAxMDEwMTAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAxMDEwMTAxMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDEwMTAxMDEwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAzMDMwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDMwMzAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMzAzMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAzMDMwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDMwMzAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMzAzMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAzMDMwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDIwMjAyMDMwMzAyMDIwMjAyMDIwMjAyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjAwMDAyMjIyMjIyMjIyMjIwMDAwMjIyMjIyMjIyMjIyMDAwMDIyMjIyMjIyMjIyMjAwMDAyMjIyMjIyMjIyMjIwMjIwMjIyMjIyMjIyMjIyMDIyMDIyMjIyMjIyMjIyMjAyMjAyMjIyMjIyMjIyMjIwMjIwMjIyMjIyMjIyMjIyMDIyMDIyMjIyMjIyMjIyMjAyMjAyMjIyMjIyMjIyMjIwMjIwMjIyMjIyMjIyMjIyMDIyMDIyMjIyMg==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.castle.tileDarkGrass2",
+            "sprites.swamp.swampTile1",
+            "sprites.castle.tileDarkGrass3"
+        ],
+        "displayName": "level2"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",

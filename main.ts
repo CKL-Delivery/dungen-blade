@@ -6,7 +6,14 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         game.splash("hi traveler.")
         game.splash("you need to find the relics.")
     }
+    if (mySprite.tileKindAt(TileDirection.Center, sprites.castle.tileDarkGrass1)) {
+        tiles.setTilemap(tilemap`level2`)
+        mySprite.setPosition(119, 300)
+        mySprite3.destroy()
+        mySprite2.destroy()
+    }
 })
+let mySprite3: Sprite = null
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
@@ -49,7 +56,7 @@ mySprite2 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.npc)
 mySprite2.setPosition(156, 121)
-let mySprite3 = sprites.create(img`
+mySprite3 = sprites.create(img`
     ........................
     ........................
     ........................
