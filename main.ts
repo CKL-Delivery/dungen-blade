@@ -2,21 +2,40 @@ namespace SpriteKind {
     export const npc = SpriteKind.create()
 }
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (mySprite.overlapsWith(mySprite2)) {
-        game.splash("hi traveler.")
-        game.splash("you need to find the relics.")
+    if (Logan.overlapsWith(orby)) {
+        if (speak_to_orbey == "no") {
+            game.splash("hi traveler.")
+            game.splash("you need to find the relics.")
+            speak_to_orbey = "1"
+        } else if (speak_to_orbey == "1") {
+            game.splash("grab the boomerang")
+            speak_to_orbey = "2"
+        } else if (speak_to_orbey == "2") {
+            game.splash("are you going to grab the boomerang")
+            speak_to_orbey = "3"
+        } else if (speak_to_orbey == "3") {
+            game.splash("JUST GRAB THE BOOMERANG!!!!")
+            speak_to_orbey = "4"
+        } else {
+            game.splash("fine I will do it for you (-_-)", "but it will be harder")
+            tiles.setTilemap(tilemap`level6`)
+            Logan.setPosition(119, 245)
+            scul.destroy()
+            orby.destroy()
+        }
     }
-    if (mySprite.tileKindAt(TileDirection.Center, sprites.castle.tileDarkGrass1)) {
+    if (Logan.tileKindAt(TileDirection.Center, sprites.castle.tileDarkGrass1)) {
         tiles.setTilemap(tilemap`level2`)
-        mySprite.setPosition(119, 300)
-        mySprite3.destroy()
-        mySprite2.destroy()
+        Logan.setPosition(119, 245)
+        scul.destroy()
+        orby.destroy()
     }
 })
-let mySprite3: Sprite = null
-let mySprite2: Sprite = null
-let mySprite: Sprite = null
-mySprite = sprites.create(img`
+let speak_to_orbey = ""
+let scul: Sprite = null
+let orby: Sprite = null
+let Logan: Sprite = null
+Logan = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f d d f f f . . . . 
     . . . f f f d d d d f f f . . . 
@@ -29,15 +48,15 @@ mySprite = sprites.create(img`
     . . f e e 4 4 4 4 4 4 e e f . . 
     . . . f e e 4 4 4 4 e e f . . . 
     . . e 4 f d d d d d d f 4 e . . 
-    . . 4 d f d d d d d d f d 4 . . 
-    . . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+    . . 4 d f e e e e e e f d 4 . . 
+    . . 4 4 f d d d d d d f 4 4 . . 
     . . . . . f f f f f f . . . . . 
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
-controller.moveSprite(mySprite)
+controller.moveSprite(Logan)
 tiles.setTilemap(tilemap`level1`)
-scene.cameraFollowSprite(mySprite)
-mySprite2 = sprites.create(img`
+scene.cameraFollowSprite(Logan)
+orby = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . 4 4 4 4 . . . . . . 
     . . . . 4 4 4 5 5 4 4 4 . . . . 
@@ -55,8 +74,8 @@ mySprite2 = sprites.create(img`
     . . . . . . 4 4 4 4 . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.npc)
-mySprite2.setPosition(156, 121)
-mySprite3 = sprites.create(img`
+orby.setPosition(156, 121)
+scul = sprites.create(img`
     ........................
     ........................
     ........................
@@ -82,5 +101,6 @@ mySprite3 = sprites.create(img`
     ........................
     ........................
     `, SpriteKind.npc)
-mySprite3.setPosition(128, 121)
+scul.setPosition(128, 121)
 game.splash("hello.....over...here.")
+speak_to_orbey = "no"
