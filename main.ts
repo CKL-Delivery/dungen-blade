@@ -11,10 +11,10 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             game.splash("grab the boomerang")
             speak_to_orbey = "2"
         } else if (speak_to_orbey == "2") {
-            game.splash("are you going to grab the boomerang")
+            game.splash("are you going to grab ", "the boomerang?")
             speak_to_orbey = "3"
         } else if (speak_to_orbey == "3") {
-            game.splash("JUST GRAB THE BOOMERANG!!!!")
+            game.splash("JUST GRAB THE ", "BOOMERANG!!!!")
             speak_to_orbey = "4"
         } else {
             game.splash("fine I will do it for you (-_-)", "but it will be harder")
@@ -30,7 +30,13 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         scul.destroy()
         orby.destroy()
     }
+    if (Logan.tileKindAt(TileDirection.Center, assets.tile`myTile3`)) {
+        item += 1
+        game.splash(convertToText(item))
+        tiles.setTileAt(tiles.getTileLocation(1, 14), assets.tile`myTile4`)
+    }
 })
+let item = 0
 let speak_to_orbey = ""
 let scul: Sprite = null
 let orby: Sprite = null

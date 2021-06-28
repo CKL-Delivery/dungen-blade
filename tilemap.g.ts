@@ -10,6 +10,10 @@ namespace myTiles {
     export const tile1 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile4 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile5 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile6 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -89,25 +93,6 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `, [myTiles.transparency16], TileScale.Sixteen);
-            case "level2":
-            case "level2":return tiles.createTilemap(hex`1000100001010101010101010104010404040404010404040404040401040104010102040104010101010104010401040104040401040404040404040104010401040101010101010101040401040104010404040404040404010404040401040101010101010101010101010401010401040401010401040404040104010104010104010104010401010401040401040101040101040104010104010101010404040401040401040404040404010404010404010101010101010101040104010104040104040404040404010401010101040401010101010101040104010404040404010101010101010401040104040404040101010101010104030401010101010101`, img`
-. . . . . . . . . 2 . 2 2 2 2 2 
-. 2 2 2 2 2 2 2 . 2 . 2 . . . 2 
-. 2 2 2 2 2 2 2 . 2 . 2 . 2 2 2 
-. 2 2 2 2 2 2 2 . 2 . 2 . 2 2 2 
-. . . . . . 2 2 . 2 . 2 . 2 2 2 
-2 2 2 2 2 . 2 2 2 2 . 2 . . . . 
-. . . . . . . . 2 . . 2 . 2 2 . 
-. 2 . 2 2 2 2 . 2 . . 2 . . 2 . 
-. 2 . 2 2 2 2 . 2 2 . 2 . . 2 . 
-. 2 . 2 2 2 2 . . . . 2 2 2 2 . 
-2 2 . 2 2 2 2 2 2 . 2 2 . 2 2 . 
-. . . . . . . . 2 . 2 . . 2 2 . 
-2 2 2 2 2 2 2 . 2 . . . . 2 2 . 
-2 2 2 2 2 2 2 . 2 . 2 2 2 2 2 . 
-2 2 2 2 2 2 2 . 2 . 2 2 2 2 2 . 
-2 2 2 2 2 2 2 . 2 . . . . . . . 
-`, [myTiles.transparency16,sprites.dungeon.darkGroundCenter,sprites.dungeon.collectibleInsignia,myTiles.tile4,sprites.dungeon.floorLight0], TileScale.Sixteen);
             case "level6":
             case "level6":return tiles.createTilemap(hex`1000100002020202020202020202020202020202020202020202020202020202020203020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202010202020202020202`, img`
 . . . . . . . . . 2 . 2 2 2 2 2 
@@ -126,7 +111,26 @@ namespace myTiles {
 2 2 2 2 2 2 2 . 2 . 2 2 2 2 2 . 
 2 2 2 2 2 2 2 . 2 . 2 2 2 2 2 . 
 2 2 2 2 2 2 2 . 2 . . . . . . . 
-`, [myTiles.transparency16,myTiles.tile4,sprites.dungeon.darkGroundCenter,sprites.dungeon.collectibleInsignia], TileScale.Sixteen);
+`, [myTiles.transparency16,myTiles.tile4,sprites.dungeon.darkGroundCenter,myTiles.tile5], TileScale.Sixteen);
+            case "level2":
+            case "level2":return tiles.createTilemap(hex`1000100001010101010101010103010303030303010303030303030301030103010104030103010101010103010301030103030301030303030303030103010301030101010101010101030301030103010303030303030303010303030301030101010101010101010101010301010301030301010301030303030103010103010103010103010301010301030301030101030101030103010103010101010303030301030301030303030303010303010303010101010101010101030103010103030103030303030303010301010101030301010101010101030103010303030303010101010101010301030103030303030101010101010103020301010101010101`, img`
+. . . . . . . . . 2 . 2 2 2 2 2 
+. 2 2 2 2 2 2 2 . 2 . 2 . . . 2 
+. 2 2 2 2 2 2 2 . 2 . 2 . 2 2 2 
+. 2 2 2 2 2 2 2 . 2 . 2 . 2 2 2 
+. . . . . . 2 2 . 2 . 2 . 2 2 2 
+2 2 2 2 2 . 2 2 2 2 . 2 . . . . 
+. . . . . . . . 2 . . 2 . 2 2 . 
+. 2 . 2 2 2 2 . 2 . . 2 . . 2 . 
+. 2 . 2 2 2 2 . 2 2 . 2 . . 2 . 
+. 2 . 2 2 2 2 . . . . 2 2 2 2 . 
+2 2 . 2 2 2 2 2 2 . 2 2 . 2 2 . 
+. . . . . . . . 2 . 2 . . 2 2 . 
+2 2 2 2 2 2 2 . 2 . . . . 2 2 . 
+2 2 2 2 2 2 2 . 2 . 2 2 2 2 2 . 
+2 2 2 2 2 2 2 . 2 . 2 2 2 2 2 . 
+2 2 2 2 2 2 2 . 2 . . . . . . . 
+`, [myTiles.transparency16,sprites.dungeon.darkGroundCenter,myTiles.tile4,sprites.dungeon.floorLight0,myTiles.tile5,myTiles.tile6], TileScale.Sixteen);
         }
         return null;
     })
@@ -142,6 +146,10 @@ namespace myTiles {
             case "tile1":return tile1;
             case "myTile2":
             case "tile4":return tile4;
+            case "myTile3":
+            case "tile5":return tile5;
+            case "myTile4":
+            case "tile6":return tile6;
         }
         return null;
     })
